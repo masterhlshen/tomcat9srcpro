@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry kind="src" path="conf"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/ant-1.6.5.jar"/>
+	<classpathentry kind="lib" path="lib/javax.xml.rpc-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/javax.wsdl_1.5.1.v201005080630.jar"/>
+	<classpathentry kind="lib" path="lib/easymock-3.6.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jdt.core-3.10.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

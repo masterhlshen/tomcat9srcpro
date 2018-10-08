@@ -1,0 +1,44 @@
+08-Oct-2018 13:43:19.631 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testBug56568a]
+08-Oct-2018 13:43:20.185 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-1"]
+08-Oct-2018 13:43:20.209 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 13:43:20.219 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Tomcat]
+08-Oct-2018 13:43:20.220 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+08-Oct-2018 13:43:20.439 信息 [main] org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment No global web.xml found
+08-Oct-2018 13:43:20.716 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Oct-2018 13:43:21.856 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-1-13233"]
+08-Oct-2018 13:43:21.969 严重 [http-nio-127.0.0.1-auto-1-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [Bug56568Servlet] in context with path [/test] threw exception [null] with root cause
+ javax.servlet.ServletException
+	at org.apache.jasper.servlet.TestJspServlet$Bug56568aServlet.doPut(TestJspServlet.java:105)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Oct-2018 13:43:22.168 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-1-13233"]
+08-Oct-2018 13:43:22.219 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Tomcat]
+08-Oct-2018 13:43:22.235 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-1-13233"]
+08-Oct-2018 13:43:22.240 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-1-13233"]
+08-Oct-2018 13:43:22.252 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testBug56568b]
+08-Oct-2018 13:43:31.313 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-2"]
+08-Oct-2018 13:43:31.316 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 13:43:31.317 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Tomcat]
+08-Oct-2018 13:43:31.317 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+08-Oct-2018 13:43:31.381 信息 [main] org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment No global web.xml found
+08-Oct-2018 13:43:32.031 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Oct-2018 13:43:32.398 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-2-13244"]
